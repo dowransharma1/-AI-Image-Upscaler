@@ -189,7 +189,43 @@
         pdf.addImage(img, "JPEG", 0, 10, width, height);
         pdf.save("AIEnhanced_Image.pdf");
         <title>"AI ImageBoost Pro is a free AI-powered image enhancer offering both free and premium options to improve visual quality."!</title>
-     };
+    <main>
+  ...
+</main>
+<main>
+  <div class="uploader">
+    <label for="imageUpload" class="btn">Upload Image</label>
+    <input type="file" id="imageUpload" accept="image/*" />
+  </div>
+
+  <div class="preview" id="preview"></div>
+
+  <div class="options" id="options" style="display: none;">
+    <button class="btn" onclick="downloadImage('hd')">Download HD (Free)</button>
+    <button class="btn" onclick="showProLock()">Download Full HD (PRO)</button>
+    <button class="btn" onclick="showProLock()">Download 4K (PRO)</button>
+    <button class="btn" onclick="downloadPDF()">Download PDF (Free)</button>
+  </div>
+
+  <!-- ✅ New About Section -->
+  <section style="margin-top: 50px; background-color: #1a1a1a; padding: 40px; border-radius: 15px;">
+    <h2 style="color: gold; text-align: center;">📢 About AI ImageBoost Pro</h2>
+    <p style="margin-top: 20px; font-size: 17px; line-height: 1.7; color: #ccc;">
+      <strong>AI ImageBoost Pro</strong> is a powerful image enhancement tool designed to transform your low-quality images into stunning HD, Full HD, or 4K versions using advanced artificial intelligence technology. Whether you're a content creator, student, or professional, our tool ensures your images always look their best.
+      <br /><br />
+      With a sleek, user-friendly interface and lightning-fast processing, you can upscale, convert, and download your files in multiple formats — including high-quality PDF documents. Want even more? Upgrade to our <strong>Pro Version</strong> to unlock 4K enhancements, batch uploads, watermark-free downloads, and more!
+    </p>
+  </section>
+
+  <!-- Pricing Section -->
+  <div class="price-card">
+    <h2>🔓 Unlock PRO Features</h2>
+    <p>4K Quality · No Watermark · Fast Enhance · Batch Convert</p>
+    <button class="btn" onclick="goPro()">Upgrade for $4.99/month</button>
+  </div>
+</main>
+
+    };
     }
   </script>
 </body>
