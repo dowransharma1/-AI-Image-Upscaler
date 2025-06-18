@@ -81,11 +81,11 @@
 
     .watermark {
       position: relative;
-      display: inline-block;
+      display:;
     }
 
-    .watermark::after {
-      content: "🔒 PRO VERSION";
+    .no watermark::after {
+      content: " free VERSION";
       color: red;
       font-size: 22px;
       position: absolute;
@@ -125,15 +125,15 @@
 
     <div class="options" id="options" style="display: none;">
       <button class="btn" onclick="downloadImage('hd')">Download HD (Free)</button>
-      <button class="btn" onclick="showProLock()">Download Full HD (PRO)</button>
-      <button class="btn" onclick="showProLock()">Download 4K (PRO)</button>
+      <button class="btn" onclick="DownloadFullHD()">Download Full HD (free)</button>
+      <button class="btn" onclick="Download4K()">Download 4K (free)</button>
       <button class="btn" onclick="downloadPDF()">Download PDF (Free)</button>
     </div>
 
-    <div class="price-card">
-      <h2>🔓 Unlock PRO Features</h2>
+    <div class="free">
+      <h2>🔓 click to Unlock PRO Features for free</h2>
       <p>4K Quality · No Watermark · Fast Enhance · Batch Convert</p>
-      <button class="btn" onclick="goPro()">Upgrade for $4.99/month</button>
+      <button class="btn" onclick="free()">free 4k quakity for</button>
     </div>
   </main>
 
@@ -162,11 +162,11 @@
       reader.readAsDataURL(file);
     });
 
-    function showProLock() {
-      alert("🚫 This feature is available in the PRO version.\nClick 'Upgrade' to unlock.");
+    function showfree() {
+      alert("🚫 This feature is available in the free version.\ .");
     }
 
-    function goPro() {
+    function free() {
       window.location.href = "https://buy.stripe.com/test_dR68xRbFG6Dx0EMaEE"; // Replace with your Stripe link
     }
 
@@ -202,7 +202,7 @@
     <li>🔄 Convert to PDF or download in multiple resolutions.</li>
     <li>🔐 Keep your images secure — nothing is stored or shared.</li>
     <li>📥 No login required for basic use — safe & fast access for all.</li>
-    <li>🚀 Premium plan unlocks 4K, watermark-free downloads, and batch enhancement.</li>
+    <li>🚀  watermark-free downloads, and batch enhancement.</li>
   </ul>
 
   <p style="margin-top: 20px; font-size: 17px; color: #ccc;">
